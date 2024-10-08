@@ -1,0 +1,114 @@
+.AllTask{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.task-card {
+    width: 95%;
+  height: 97%;
+  /* background-color: pink; */
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  }
+
+  .task-card::-webkit-scrollbar {
+    width: 0;
+    background: transparent;
+  }
+
+  .task-card-wrap{
+    border: 1px solid #e0e0e0;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    text-decoration: none;
+    /* display: flex; */
+  }
+  
+  .task-title {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+  color: black;
+}
+  
+  .task-description {
+    margin-bottom: 10px;
+    color: #555;
+  }
+  
+  .task-timeout {
+    font-style: italic;
+    color: #888;
+  }
+  
+  .task-status {
+    display: inline-block;
+    padding: 3px 6px;
+    border-radius: 3px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .task-status.active {
+    background-color: #4caf50;
+    color: white;
+  }
+  
+  .task-status.pending {
+    background-color: #fdd835;
+    color: #333;
+  }
+  
+  .task-status.completed {
+    background-color: #2196f3;
+    color: white;
+  }
+  .task-status .Admintaskoverviewcolor11{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #fdd835;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    font-weight: 700;
+    color: white;
+    /* margin-bottom: 70%; */
+}
+.Admintaskoverviewcolor1 h4{
+    color: #fdd835;
+}
+.task-status .Admintaskoverviewcolor21{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #4caf50;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+}
+.task-status .Admintaskoverviewcolor31{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #2196f3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+}

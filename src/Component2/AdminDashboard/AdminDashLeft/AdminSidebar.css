@@ -1,0 +1,151 @@
+.Adminsidebar{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-color: red; */
+}
+.AdminSide_Wrap{
+  width: 95%;
+  height: 95%;
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
+}
+.Adminsidebarlogo{
+  width: 100%;
+  height: 20%;
+  cursor: pointer;
+  /* padding-bottom: 50%; */
+  /* background-color: blue; */
+}
+.AdminLogo_SideBar{
+  width: 200px;
+  height: 180px;
+  /* margin-bottom: 40%; */
+  /* background-color: red; */
+}
+.AdminsidebarNav{
+  width: 100%;
+  height: 80%;
+}
+.AdminsidebarNav_Wrap{
+  width: 100%;
+  height: 65%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  /* background-color: pink; */
+}
+.Admintaskside{
+  /* background-color: aqua; */
+  width: 100%;
+  height: 50px;
+  color: white;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  padding-left: 10px;
+}
+/* .taskovertxt{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+} */
+/* .Admintask{
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+color: white;
+} */
+/* .Admintask p{
+  padding-top: 20px;
+} */
+.Admintaskside:hover{
+  background-color: white;
+  border-radius: 3px;
+  cursor: pointer;
+  color: #0455B4;
+}
+
+.AdminSignOutDiv{
+  width: 100%;
+  height: 10%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  color: white;
+  margin-top: 38%;
+  padding-left: 5%;
+  /* margin-left: 5%; */
+  gap: 10px;
+}
+/* .TASk{
+  margin-bottom: 20px;
+} */
+.AdminSignOutDiv:hover{
+  background-color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  color: #0455B4;
+}
+.AdminsidebarNav_Wrap .Admintaskside.active {
+  background-color: white; /* Change this to the desired active background color */
+  color: #0455B4; /* Change this to the desired active text color */
+}
+.AdminsidebarNav_Wrap .Admintaskside.active:hover {
+  background-color: white;
+  color: #0455B4; /* Change this to the desired hover background color for active tab */
+}
+
+@media screen and (max-width: 426px) {
+  .Adminsidebar{
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    color: #0455B4;
+  }
+  .AdminSignOutDiv{
+    /* background-color: pink; */
+    color: white;
+  }
+}
+
+@media screen and (max-width: 768px){
+  .Adminsidebar{
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    color: #0455B4;
+  }
+  .Adminsidebarlogo{
+    background-color: none;
+    cursor: pointer;
+  }
+  .AdminSignOutDiv{
+    /* background-color: blanchedalmond; */
+    color: white;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1284px){
+   .AdminSignOutDiv{
+    color: white;
+  /*  width: 100%;
+    height: 10%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    color: white;
+    margin-top: 38%;
+    padding-left: 5%;
+    gap: 10px; */
+    /* background-color: red; */
+  }
+}

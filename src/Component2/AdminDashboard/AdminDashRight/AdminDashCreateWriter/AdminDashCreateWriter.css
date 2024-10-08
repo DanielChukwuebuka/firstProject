@@ -1,0 +1,61 @@
+.AdminDashCreateWriter{
+    width: 100%;
+    height: 90vh;
+    /* background-color: gray; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.AdminDashCreateWriterwrap{
+    width: 80%;
+    height: 90%;
+    /* background-color: rgb(254, 254, 254);  */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.AdminDashCreateWriterActionCenter{
+    width: 60%;
+    height: 40%;
+    border: 2px solid #0455B4;
+    display: flex;
+    background-color: white;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 20px;
+}
+.AdminDashCreateWriterActionCenter p{
+    color: black;
+}
+.AdminCreateWriterAdd{
+    width: 100%;
+    height: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.AdminCreateWriterAddIcon{
+    font-size: 70px;
+    color: #0455B4;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 426px) {
+    .AdminDashCreateWriter{
+        width: 100%;
+        height: 90vh;
+        /* background-color: red; */
+    }
+    .AdminDashCreateWriterwrap{
+        width: 90%;
+        height: 80%;
+        /* background-color: gray; */
+    }
+    .AdminDashCreateWriterActionCenter{
+        width: inherit;
+        height: 40%;
+        /* background-color: white; */
+    }
+}

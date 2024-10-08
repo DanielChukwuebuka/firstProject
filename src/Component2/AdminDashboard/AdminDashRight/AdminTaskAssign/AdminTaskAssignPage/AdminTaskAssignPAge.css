@@ -1,0 +1,304 @@
+.task-assignment {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    gap: 20px;
+  }
+  
+  .task-form {
+    margin-bottom: 20px;
+  }
+  
+  .task-form input,
+  textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    transition: border-color 0.9s ease-in-out; 
+  }
+
+.task-form input:focus,
+.task-form textarea:focus {
+  border: 2px solid #0455B4;
+  outline: none; 
+}
+
+  
+  .task-form button {
+    background-color: #0455B4;
+    color: white;
+    border: none;
+    padding: 12px 16px;
+    cursor: pointer;
+    padding-top: 10px;
+  }
+  
+  .task-list {
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    /* border: 1px solid #0455B4; */
+  }
+
+  .task-list::-webkit-scrollbar {
+    width: 0;
+    background: transparent;
+  }
+  
+  .task-list .task-card12 {
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow-y: none;
+  }
+  
+  .task-list .task-card12 h2 {
+    text-align: center;
+  }
+  
+  .task-list .task-card12 h3 {
+    margin: 0;
+    color: black;
+  }
+  
+  .task-list  .task-card12 p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #666;
+  }
+  
+  /* AdminTaskAssignPage.css */
+
+.time-input {
+  display: flex;
+  align-items: center;
+  /* margin-top: 2px; */
+  /* background-color: red; */
+}
+
+.label-container {
+  display: flex;
+  flex-direction: column;
+  margin-right: 10px;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+select {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  width: 60px;
+}
+
+.task-card h3{
+  color: black;
+}
+
+.description {
+  font-size: 16px;
+  color: #333;
+  /* Add your default styles here */
+}
+
+.started {
+  color: #00a000; /* Green color for started tasks */
+  /* Add any additional styles for started tasks here */
+}
+
+.completed {
+  color: #0455b4; /* Blue color for completed tasks */
+  /* Add any additional styles for completed tasks here */
+}
+
+.time-elapsed {
+  color: #ff0000; /* Red color for time-elapsed tasks */
+  /* Add any additional styles for time-elapsed tasks here */
+}
+
+
+
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #ffffff;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  z-index: 1000;
+  animation: fadeInOut 3s ease-in-out;
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.8);
+  }
+  50% {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1.05);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.8);
+  }
+}
+
+.popup p {
+  margin: 0;
+  font-size: 16px;
+  color: #333333;
+}
+  
+
+
+
+
+
+
+
+
+/* .AdminTaskAssignPage{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.AdminTaskAssignPageWrap{
+    width: 80%;
+    height: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: aliceblue;
+}
+.AdminTaskassigned{
+    width: 100%;
+    height: 10%;
+    background-color: aliceblue;
+    padding-left: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: 600;
+    color: #0455B4;
+}
+.AdminTaskAssignInputsTag{
+    width: 100%;
+    height: 15%;
+    display: flex;
+    align-items: center;
+}
+.AdminInput{
+    width: 100%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+}
+.AdminInput input{
+    width: 70%;
+    height: 80%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+.AdminInput input:focus{
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+}
+.AdminTaskassineeID{
+    width: 100%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.user-card {
+    width: 50%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  
+  .user-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .avatar {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    background-color: #0455B4;
+    color: white;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .user-info {
+    flex: 1;
+    text-align: center;
+  }
+  
+  .user-info h3 {
+    margin: 0;
+    font-size: 24px;
+  }
+  
+  .user-info p {
+    margin: 8px 0;
+    font-size: 16px;
+    color: #666;
+  }
+  
+.AdminTaskAssignCreateTaskButton{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    justify-content: center;
+}
+.AdminTaskAssignCreateTaskButton button{
+    width: 50%;
+    height: 60%;
+    background-color: #0455B4;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+
+} */

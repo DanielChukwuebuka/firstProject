@@ -1,0 +1,338 @@
+.AdminDashRightMain{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.AdminDashRightHeader{
+    width:100% ;
+    height: 10%;
+    background-color: #0455B4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+.AdminDashRightHeader_Wrap{
+    width: 90%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* background-color: pink; */
+    align-self: center;
+}
+.AdminDashRightHeader_Wrap h3{
+  margin-bottom: 15px;
+}
+/* HomeDashboard.css */
+
+.AdminUserIcon{
+    display: none;
+}
+
+.optUser1{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: white;
+  color: #0455B4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 20px;
+  /* margin-left: 0px; */
+}
+
+.userprofile{
+  width: 7%;
+  height: 15%;
+  background: white;
+  position: absolute;
+  top: 10%;
+  left: 22.5%;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  transition: all 320ms ease-in ;
+  padding: 10px;
+}
+
+.userbox{
+  font-size: 15px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+}
+
+.userbox li{
+  font-size: 18px;
+  font-weight: 500;
+  margin-top: 5%;
+  color: #0455B4;
+  cursor: pointer;
+}
+  
+@media screen and (max-width: 426px){
+    .AdminUserIcon{
+        display: flex;
+    }
+    .AdminDashRightHeader_Wrap h3{
+        display: none;
+    }
+.Adminsidebar_MobileView{
+    width: 80%;
+    display: flex;
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left: 20%;
+    /* background-color: #0455B4; */
+    background-color: white;
+    animation: fadeInRight;
+    animation-duration: 5s;
+    /* color: #0455B4; */
+    
+}
+.AdminSideBarCloseIcon{
+    position: absolute;
+    right: 5%;
+    top: 5%;
+    font-size: 40px;
+    color: #0455B4;
+    animation: fadeOutRight;
+    animation-duration: 3s;
+    /* background-color: #0455B4; */
+}
+.AdminSide_Wrap{
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+}
+.Adminsidebarlogo{
+    /* position: absolute;
+    bottom: 0; */
+    width: 80%;
+    height: 20%;
+    /* background-color: green; */
+    /* margin-left: 40%; */
+}
+.Adminsidebarlogo img{
+    width: 100%;
+    height: 100%;
+}
+.AdminsidebarNav{
+    width: 100%;
+    height: 100%;
+    /* background-color: blue; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* margin-left: 30%; */
+    
+}
+.AdminsidebarNav_Wrap{
+    width: 100%;
+    height: 80%;
+    /* background-color: silver; */
+    gap: 10px;
+}
+.Admintask{
+    width: 100%;
+    height: 15%;
+    /* background-color: black; */
+    color: white;
+    gap: 10px;
+}
+.Admintask:hover{
+    background-color: #0455B4;
+    color: white;
+}
+.AdminSignOutDiv{
+    width: 100%;
+    height: 10%;
+    color: #0455B4;
+}
+.optUser1{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: white;
+  color: #0455B4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 20px;
+  /* margin-left: 0px; */
+}
+.userprofile{
+  width: 30%;
+  height: 15%;
+  background: white;
+  position: absolute;
+  top: 10%;
+  left: 1.5%;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  transition: all 320ms ease-in ;
+  padding: 10px;
+}
+
+.userbox{
+  font-size: 15px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+}
+
+.userbox li{
+  font-size: 18px;
+  font-weight: 500;
+  margin-top: 5%;
+  color: #0455B4;
+  cursor: pointer;
+}
+}
+
+@media screen and (max-width: 768px){
+    .AdminUserIcon{
+        display: flex;
+    }
+    .AdminDashRightHeader_Wrap h3{
+        display: none;
+    }
+.Adminsidebar_MobileView{
+    display: block; /* Display the mobile sidebar */
+    position: fixed;
+    top: 0;
+    left: 20%;
+    width: 80%;
+    height: 100%;
+    background-color: #0455B4;
+    z-index: 1000;
+    overflow-y: auto;
+    animation: fadeInRight 2.3s;
+
+    /* width: 80%;
+    display: flex;
+    position: absolute;
+    height: 100vh;
+    top: 0;
+    left: 20%;
+    background-color: white;
+    animation: fadeInRight;
+    animation-duration: 2.5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+     */
+}
+.AdminSideWrap {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    color: white;
+  }
+  
+  .Adminsidebarlogo {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+
+  .Adminsidebarlogo .iconclose{
+    font-size: 40px;
+    padding-bottom: 90px;
+    color: #0455B4;
+    animation: backOutRight 6s;
+  }
+  
+  .Adminlogo_SideBar {
+    cursor: pointer;
+  }
+  
+  .AdminsidebarNav {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .Admintask {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    cursor: pointer;
+  }
+  
+  .Admintask p {
+    margin-left: 10px;
+  }
+  
+  .AdminSignOutDiv {
+    margin-top: auto;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    color: white;
+  }
+  .optUser1{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: white;
+    color: #0455B4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 20px;
+    /* margin-left: 0px; */
+  }
+  .userprofile{
+    width: 22%;
+    height: 15%;
+    background: white;
+    position: absolute;
+    top: 10%;
+    left: 1%;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    transition: all 320ms ease-in ;
+    padding: 10px;
+  }
+  
+  .userbox{
+    font-size: 15px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+  }
+  
+  .userbox li{
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 5%;
+    color: #0455B4;
+    cursor: pointer;
+  }
+}

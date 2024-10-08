@@ -1,0 +1,493 @@
+@media screen and (max-width: 768px) {
+    header{
+        width: 100%;
+        height: 15vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /* background-color: pink; */
+    }
+    
+    .headerwrap{
+        width: 90%;
+        height: 100%;
+        /* background-color: rgb(217, 199, 199); */
+        display: flex;
+    }
+
+    .Logo{
+        width: 15%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        /* background-color: green; */
+    }
+    
+    .Logo img {
+        width: 100%;
+        height: 100%;
+        border: none;
+        color: white;
+        border-radius: 3px;
+        cursor: pointer;
+        object-fit: cover;
+    }
+
+    .centerNav{
+        width: 40%;
+        height: 80%;
+        /* background-color: red; */
+    }
+    
+    .centerNav ul{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .centerNav ul li {
+        list-style-type: none;
+        cursor: pointer;
+    }
+
+    .usericons{
+        display: flex;
+        align-items: center;
+        gap: 3px;
+    }
+    
+    .users{
+        font-size: 20px;
+    }
+
+    .CTA1{
+        width: 16%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        /* background-color: purple; */
+    }
+    .CTA{
+        display: none;
+    }
+    
+    .CTA1 button {
+        width: 100%;
+        height: 60%;
+        border: none;background-color: #0455B4;
+        color: white;
+        border-radius: 3px;
+        cursor: pointer;
+    }
+    /* .Logo{
+        display: flex;
+        align-items: center;
+        background-color: yellow;
+    }
+    .Logo img{
+        width: 100%;
+        height: 100%;
+    }
+    
+    .Logo button {
+        width: 90%;
+        height: 60%;
+        border: none;background-color: #0455B4;
+        color: white;
+        border-radius: 3px;
+        cursor: pointer;
+    }
+    
+    .centerNav{
+        background-color: black;
+    }
+    
+    .centerNav ul{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: green;
+    }
+    .CTA1 {
+        width: 20%;
+        height: 100%;
+        background-color: #93c1f6;
+    }
+    
+    .centerNav ul li {
+        list-style-type: none;
+        cursor: pointer;
+    }
+    
+    .usericons{
+        display: flex;
+        align-items: center;
+        gap: 3px;
+    }
+    
+    .user{
+        font-size: 20px;
+    }
+    
+    .CTA{
+        width: 15%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+    
+    .CTA button {
+        width: 90%;
+        height: 40%;
+        border: none;background-color: #0455B4;
+        color: white;
+        border-radius: 3px;
+        cursor: pointer;
+    }
+
+    .CTA img {
+        display: none;
+    }
+    
+    .sidebarDiv{
+        display: none;
+    }
+    
+    .ham{
+        display: none;
+    } */
+  
+}
+
+/* @media (min-width: 769px) and (max-width: 1284px){
+
+} */
+
+@media screen and (max-width: 426px) {
+    header{
+        width: 100%;
+        height: 15vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /* position: fixed; */
+        /* background-color: rgb(227, 239, 249); */
+    }
+
+    .headerwrap{
+        width: 90%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        box-shadow: none;
+    }
+
+    .ham{
+        display: block;
+        font-size: 30px;
+    }
+
+    .CTA1{
+        display: none;
+    }
+
+    .CTA{
+        width: 40%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    .CTA img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .Logo, .centerNav{
+        display: none;
+    }
+
+    .sidebarDiv{
+    top: 0;
+    /* left: 0; */
+    right: 0;
+    width: 75%;
+    height: 100vh;
+    background-color: #0455B4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    z-index: 20;
+    color: white;
+    }
+
+    .close{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    }
+
+    .contents{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;;
+    }
+
+    .useR{
+        width: 100%;
+        height: 25%;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .useR p{
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    .closeicon{
+        width: 50px;
+        height: 50px;
+        color: white;
+    }
+
+    .aUser{
+        width: 50px;
+        height: 50px;
+    }
+
+    .centerNav1{
+        width: 100%;
+        height: 50%;
+        display: block;
+    }
+    
+    .centerNav1 ul{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        /* background-color: red; */
+        margin-bottom: 30%;
+    }
+    
+    .centerNav1 ul div {
+        width: 60%;
+        height: 15%;
+        /* background-color: #0455B4; */
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 3px;
+        color: white;
+    }
+    .div{
+        width: 100%;
+        height: 20%;
+        /* background-color: pink; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .optUsers{
+        width: 60px;
+        height: 60px;
+        font-size: 30px;
+        border-radius: 50%;
+        background: #000;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
+    .Dash1{
+        width: 100%;
+        height: 10%;
+        /* background-color: red; */
+        gap: 10px;
+        font-size: 20px;
+        /* display: flex; */
+    }
+
+}
+
+/* @media screen and (max-width: 426px) {
+    header{
+        width: 100%;
+        height: 6vh;
+        background-color: #151617;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+    }
+
+    button {
+    }
+
+    span {
+        display: block;
+        width: 30px;
+        height: 40px;
+    }
+
+    .centerNav{
+        width: 70%;
+        height: 80%;
+    }
+
+    .Logo{
+        display: block;
+        width: 300%;
+        height: 70%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    
+    
+    .Logo img {
+        width: 100px;
+        height: 100px;
+    }
+
+    span .burger {
+        width: 100%;
+        height: 100%;
+    }
+
+    .headerwrap{
+        width: 90%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .ham{
+        width: 30%;
+        height: 100%;
+        display: block;
+        font-size: 30px;
+        background-color: gray;
+    }
+
+    .CTA{
+        width: 40%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .Logo, .centerNav{
+        display: none;
+    }
+
+    .sidebarDiv{
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: whitesmoke;
+    z-index: 1900; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    }
+
+    .close{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    }
+
+    .contents{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;;
+    }
+
+    .useR{
+        width: 100%;
+        height: 25%;
+        color: #0455B4;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .useR p{
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    .closeicon{
+        width: 50px;
+        height: 50px;
+        color: #0455B4;
+    }
+
+    .aUser{
+        width: 100px;
+        height: 100px;
+    }
+
+    .centerNav1{
+       display: block;
+    }
+    
+    .centerNav1 ul{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    
+    .centerNav1 ul div {
+       display: none;
+    }
+
+    
+
+
+}
+
+  */
